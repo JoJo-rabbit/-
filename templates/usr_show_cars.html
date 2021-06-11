@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form action="/usr_rentcar/" method="GET">
+        <div class="input_info">
+            <button class="rent_btn">我要租车</button>
+            <input type="text" class="rent_input" placeholder="输入车牌号" name="rent_license">
+        </div>
+        <div class="form-group">
+
+        </div>
+    </form>
+    <p>
+        {{ cars|length }} cars total
+    </p>
+    <table class="i-list">
+        <thead>
+            <td>车牌号</td>
+            <td>租金</td>
+            <td>品牌</td>
+            <td>车况</td>
+            <td>已租</td>
+        </thead>
+        <tbody>
+            {% for i in cars %}
+            <tr>
+                <td>{{ i.license }}</td>
+                <td>{{ i.cost }}</td>
+                <td>{{ i.brand }}</td>
+                <td>{{ i.status }}</td>
+                <td>{{ i.rent }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="#">回到顶部</a>
+{% endblock %}

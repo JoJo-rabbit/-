@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <p>
+        <!-- <img alt="tree" class="tree" src="{{ url_for('static',filename='tree.png') }}">  -->
+        {{ movies|length }} titles
+    </p>
+    <ul class="i-list">
+        {% for i in movies %}
+        <li>
+            {{ i.title }}
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            {{ i.year }}
+        </li>
+        {% endfor %}
+    </ul>
+    <a href="#">回到顶部</a>
+{% endblock %}

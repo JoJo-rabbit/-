@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='login.css') }}">
+{% endblock %}
+
+{% block content %}
+    <h3 class="page-title">管理员注册</h3>
+    <form action="/logup" method="GET">
+        <div class="form-container">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="用户名" name="usr_name">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="密码" name="usr_passwd">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="确认密码" name="usr_passwd">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary btn-block">注册</button>
+            </div>
+        </div>
+    </form>
+    <script language="JavaScript">
+
+    </script>
+{% endblock %}

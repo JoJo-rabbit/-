@@ -1,0 +1,58 @@
+body{
+    margin: auto;
+    max-width: 580px;
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
+    background-image: url("mountain.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    background-color:#CCCCCC;
+}
+
+footer{
+    width: 30%;
+    position: absolute;
+    bottom: 100px;
+    text-align: center;
+    color: #888;
+}
+
+.page-title {
+    text-align: center;/*设置文字居中*/
+    font-size: 26px;
+}
+
+.form-group {
+    text-align: center;
+}
+
+.form-control {
+    border-radius: 5px;
+    font-size: 22px; /*设置输入框的字体大小*/
+
+}
+.btn {
+    font-size: 22px;
+}
+
+.form-container{
+    margin-top: 150px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    background-color: rgba(166,196,196,.8);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,.6);
+}
+
+.log_up_m{
+    text-align: center;
+    margin-left: 350px;
+}
+
+.halvedhead{
+    text-align: center;
+}

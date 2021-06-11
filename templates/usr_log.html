@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        汽车租赁信息系统
+    </title>
+    <link rel="icon" href="{{ url_for('static',filename='eagle.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='log_list.css') }}" type="text/css">
+{% endblock %}
+
+
+{% block content %}
+    <p>
+        {{ person_log|length }} logs total
+    </p>
+    <table class="i-list">
+        <thead>
+            <td>车牌号</td>
+            <td>租车时间</td>
+            <td>还车时间</td>
+            <td>花费金额</td>
+            <td>租车员工</td>
+            <td>还车员工</td>
+            <td>订单状态</td>
+        </thead>
+        <tbody>
+            {% for i in person_log %}
+            <tr>
+                <td>{{ i.license }}</td>
+                <td>{{ i.start_time }}</td>
+                <td>{{ i.finish_time }}</td>
+                <td>{{ i.cost }}</td>
+                <td>{{ i.rent_e }}</td>
+                <td>{{ i.back_e }}</td>
+                <td>{{ i.status }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="#">回到顶部</a>
+{% endblock %}

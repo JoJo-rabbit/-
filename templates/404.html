@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+       4 0 4 ERROR
+    </title>
+    <link rel="icon" href="{{ url_for('static',filename='eagle.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" type="text/css">
+{% endblock %}
+
+{% block content %}
+    <ul class="error_info">
+        <li>
+            Page Not Found - 404
+            <span class="float-right">
+                <a href="{{ url_for('index') }}">Go Back</a>
+            </span>
+        </li>
+    </ul>
+{% endblock %}

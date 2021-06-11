@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static',filename='login.css') }}">
+    <script type="text/javascript">
+        var sign = {{ usr_fail_logup_sign | tojson }};
+        var sign2= {{ usr_miss_passwd_sign| tojson }}
+        if( sign == 1) alert("用户名已被占用！请重新注册");
+        else if( sign2 == 1) alert("两次输入的密码不一致！请重新输入");
+
+    </script>
+{% endblock %}
+
+{% block content %}
+    <h3 class="page-title">用户注册</h3>
+    <form action="/usr_logup/" method="GET">
+        <div class="form-container">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="用户名" name="usr_name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="真实姓名" name="true_name">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="密码" name="usr_passwd">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="确认密码" name="usr_confirm_passwd">
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary btn-block">注册</button>
+            </div>
+        </div>
+    </form>
+{% endblock %}

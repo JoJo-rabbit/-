@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        var sign = {{ finish_sign | tojson }};
+        if(sign == 1) alert("订单已生成！等待管理员处理。。。");
+
+    </script>
+</head>
+<body>
+    <div class="choose_container">
+        <div class="choose_group">
+            <a class="choose_btn" href="/usr_privateinfo">个人信息</a>
+        </div>
+        <div class="choose_group">
+            <a class="choose_btn" href="/usr_showcars">车辆信息</a>
+        </div>
+        <div class="choose_group">
+            <a class="choose_btn" href="/usr_log">我的订单</a>
+        </div>
+    </div>
+</body>
+</html>

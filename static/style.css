@@ -1,0 +1,92 @@
+body {
+    margin: auto;
+    max-width: 580px;
+    font-size: 14px;
+    font-family: Helvetica, Arial, sans-serif;
+    background-image: url("tree.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    background-color:#CCCCCC;
+}
+
+footer{
+    width: 30%;
+    position: absolute;
+    bottom: 100px;
+    text-align: center;
+    color: #888;
+}
+
+.tree {
+    width: 40px;
+}
+
+table {
+    width:580px;
+    margin: auto;
+    text-align: center;
+
+}
+
+.i-list {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.i-list thead, tr , td {
+    padding: 12px 24px;
+    border-bottom: 1px solid #ddd;
+}
+
+.i-list tr:last-child {
+    border-bottom:none;
+}
+
+.i-list tr:hover {
+    background-color: #f8f9fa;
+}
+
+.i-list li {
+    padding: 12px 24px;
+    border-bottom: 1px solid #ddd;
+}
+
+.i-list li:last-child {
+    border-bottom:none;
+}
+
+.i-list li:hover {
+    background-color: #f8f9fa;
+}
+
+.error_info{
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.error_info li{
+    padding: 48px 48px;
+    border-bottom: 1px solid #ddd;
+}
+.error_info li:hover {
+    background-color: #f8f9fa;
+}
+
+.halvedhead{
+    text-align: center;
+}
+
+
+.rent_input {
+    float: right;
+    background-color: #dddddd;
+}
+.rent_btn {
+    float: right;
+}
+
